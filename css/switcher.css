@@ -1,0 +1,107 @@
+.style-switcher{
+    position: fixed;
+    left: 70%;
+    top: 25px;
+    display: flex;
+    width: 300px;
+    align-items: center;
+    flex-direction: column-reverse;
+    height: 130px;
+    justify-content: space-between;
+    transition: all 0.4s ease;
+    transform: translate(-50%,0%);
+}
+.style-switcher .buttons{
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    color: black;
+}
+.style-switcher .style-switcher-toggler{
+    padding: 8px 15px;
+    border-radius: 500px;
+    background: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+.style-switcher .day-night{
+    padding: 8px 17px;
+    border-radius: 500px;
+    background: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+.style-switcher h4{
+    color: var(--skin-color);
+    transition: all 0.4s ease;
+    transform: translateY(-25%);
+}
+.style-switcher .colors{
+    width: 200px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border-bottom: solid 2px var(--skin-color);
+    border-right: solid 2px var(--skin-color);
+    border-left: solid 2px var(--skin-color);
+    background-color: var(--bg-black-100);
+    transition: all 0.4s ease;
+    transform: translate(0%,-50%);
+    cursor: pointer;
+}
+.style-switcher .colors .color-1{
+    width: 25px;
+    height: 25px;
+    background-color: #f66079;
+    border-radius: 200px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.style-switcher .colors .color-2 {
+    width: 25px;
+    height: 25px;
+    background-color: #f5039c;
+    border-radius: 200px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.style-switcher .colors .color-3 {
+    width: 25px;
+    height: 25px;
+    background-color: #2ec88d;
+    border-radius: 200px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.style-switcher .colors .color-4 {
+    width: 25px;
+    height: 25px;
+    background-color: #ff7f30;
+    border-radius: 200px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.style-switcher .colors .color-5 {
+    width: 25px;
+    height: 25px;
+    background-color:#00b5ff;
+    border-radius: 200px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+/* start toggler buttons */
+.style-switcher.active{
+    transform: translate(-50%,-70%);
+}
+.style-switcher h4.active{
+    transform: translateY(-300%);
+}
+.style-switcher .colors.active{
+    transform: translateY(-100%);
+}
+.style-switcher.none{
+    display: none;
+}
+/* end toggler buttons */
